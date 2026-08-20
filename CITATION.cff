@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the thesis and this repository."
+title: "Hepatic Ultrasound Acquisition Assistance"
+type: software
+authors:
+  - family-names: "Guapaz Pozo"
+    given-names: "Julian Andre"
+date-released: 2026-08-20
+version: "1.0.0-thesis"
+abstract: "Computer-vision research prototype for assisting the standardized acquisition of four hepatic ultrasound views."
+keywords:
+  - hepatic ultrasound
+  - computer vision
+  - image segmentation
+  - DINOv2
+  - standardized acquisition
+repository-code: "https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance"

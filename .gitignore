@@ -1,0 +1,37 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated or local evidence
+outputs/
+runtime_outputs/
+*.log
+*.tmp
+
+# Study data must not be committed
+Dataset/
+Dataset_Frames_Processed/
+Dataset_Roboflow_Longitudinal/
+data/**/*.mp4
+data/**/*.avi
+data/**/*.mov
+data/**/*.mkv
+data/**/*.dcm
+data/**/*.png
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.json
+!data/README.md
+
+# Large segmentation checkpoints are release assets
+models/segmentation_checkpoints/*.pth
+!models/segmentation_checkpoints/README.md
