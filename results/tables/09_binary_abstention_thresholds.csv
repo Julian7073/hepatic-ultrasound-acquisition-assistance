@@ -1,0 +1,4 @@
+﻿adjust_threshold,capture_threshold,minimum_action_precision,internal_adjust_precision,internal_blurry_coverage,internal_false_adjust_clear_rate,internal_capture_precision,internal_clear_coverage,internal_false_capture_blurry_rate,calibration_videos,medium_used_for_calibration,p005_used_for_calibration,view,embedding_variant,temporal_mode,classifier
+0.35,0.65,0.9,1.0,1.0,0.0,1.0,1.0,0.0,7,False,False,hepatorrenal,small_full,window5,knn
+0.35,0.65,0.9,1.0,1.0,0.0,1.0,1.0,0.0,7,False,False,oblicua,small_fan_crop,window5,logistic_regression
+0.35,0.65,0.9,1.0,1.0,0.0,1.0,1.0,0.0,6,False,False,transversal,small_fan_crop,window5,random_forest

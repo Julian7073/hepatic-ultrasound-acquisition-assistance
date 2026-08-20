@@ -1,0 +1,4 @@
+﻿view,embedding_variant,temporal_mode,classifier,test_anchor_videos,video_accuracy,video_balanced_accuracy,video_precision_macro,video_recall_macro,video_f1_macro,video_samples,video_blurry_precision,video_blurry_recall,video_blurry_f1,video_blurry_support,video_clear_precision,video_clear_recall,video_clear_f1,video_clear_support,action_videos,action_anchor_videos,action_capture_rate_clear,action_false_capture_rate_blurry,action_adjust_rate_blurry,action_false_adjust_rate_clear,action_anchor_abstention_rate,action_medium_doubtful_rate
+hepatorrenal,small_full,window5,knn,2,1.0,1.0,1.0,1.0,1.0,2,1.0,1.0,1.0,1,1.0,1.0,1.0,1,3,2,0.0,0.0,0.0,0.0,1.0,0.0
+oblicua,small_fan_crop,window5,logistic_regression,2,1.0,1.0,1.0,1.0,1.0,2,1.0,1.0,1.0,1,1.0,1.0,1.0,1,3,2,1.0,0.0,1.0,0.0,0.0,0.0
+transversal,small_fan_crop,window5,random_forest,2,0.5,0.5,0.25,0.5,0.3333333333333333,2,0.0,0.0,0.0,1,0.5,1.0,0.6666666666666666,1,3,2,1.0,0.0,0.0,0.0,0.5,0.0

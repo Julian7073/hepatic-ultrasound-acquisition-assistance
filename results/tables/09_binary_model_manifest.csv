@@ -1,0 +1,4 @@
+view,model_path,embedding_variant,embedding_model_id,preprocessing,temporal_mode,classifier,adjust_threshold,capture_threshold,p005_used_for_selection
+hepatorrenal,models/classifiers/hepatorrenal__binary_dinov2.joblib,small_full,facebook/dinov2-small,full,window5,knn,0.35,0.65,False
+oblicua,models/classifiers/oblicua__binary_dinov2.joblib,small_fan_crop,facebook/dinov2-small,fan_crop,window5,logistic_regression,0.35,0.65,False
+transversal,models/classifiers/transversal__binary_dinov2.joblib,small_fan_crop,facebook/dinov2-small,fan_crop,window5,random_forest,0.35,0.65,False

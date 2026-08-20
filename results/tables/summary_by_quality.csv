@@ -1,0 +1,4 @@
+﻿quality,frames_processed,roi_present_count,liver_present_count,la_present_count,raw_capture_count,stable_capture_count,saved_captures,no_structure_count,partial_liver_count,liver_without_reference_count,capture_count,mean_ms,fps_effective
+clear,34,34,34,0,0,0,0,0,0,34,0,73.32187941178478,13.638493830523299
+medium,34,34,34,3,0,0,0,0,0,34,0,76.07572058807764,13.144798265068513
+blurry,34,34,34,0,0,0,0,0,0,34,0,75.36783529424022,13.268259544617997

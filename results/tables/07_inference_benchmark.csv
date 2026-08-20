@@ -1,0 +1,8 @@
+component,mean_ms_per_frame,median_ms_per_frame,p95_ms_per_frame,fps,meets_30_fps,resolution,parameter_count,checkpoint_path,device
+ROI,10.63340329782587,9.257700003217906,21.340700011933222,94.04326836775412,True,512x512,22437457,<PROJECT_ROOT>\outputs\experimental_segmentation_pipeline\experiments\deeplabv3_roi_50ep_group_video_earlystop\best_model.pth,cuda
+Higado,9.723660442722286,8.735299983527511,13.020849990425631,102.84192932183828,True,512x512,22437457,<PROJECT_ROOT>\outputs\experimental_segmentation_pipeline\experiments\deeplabv3_higado_pretrained_imagenet_50ep\best_model.pth,cuda
+LA,10.46061428752472,10.109600028954446,12.782300007529557,95.5966803204469,True,512x512,24436369,<PROJECT_ROOT>\outputs\experimental_segmentation_pipeline\experiments\unet_la_pretrained_imagenet_50ep_balanced\best_model.pth,cuda
+preprocessing,8.83521538504123,8.225300000049174,10.46384999062866,113.18343202963504,True,mixed,0,,cuda
+postprocessing,2.712087910417672,0.7715999963693321,1.1997999681625515,368.7196112481458,True,mixed,0,,cuda
+read_io,6.785310987782266,5.626500002108514,12.712900002952665,147.3771801765041,True,original,0,,cuda
+pipeline_3_models_total,49.273520878229576,45.08040001383051,61.840650014346465,20.294876074947346,False,mixed,69311283,,cuda

@@ -1,0 +1,4 @@
+﻿"view","three_class_classifier","three_class_video_f1_macro","three_class_video_accuracy","binary_embedding_variant","binary_temporal_mode","binary_classifier","binary_video_f1_macro","binary_video_balanced_accuracy","comparison_warning"
+"hepatorrenal","logistic_regression","0.3518518518518518","0.45555555555555555","small_full","window5","knn","1.0","1.0","Different tasks: three classes versus clear/blurry anchors"
+"oblicua","random_forest","0.25925925925925924","0.38888888888888884","small_fan_crop","window5","logistic_regression","1.0","1.0","Different tasks: three classes versus clear/blurry anchors"
+"transversal","logistic_regression","0.5555555555555555","0.6666666666666666","small_fan_crop","window5","random_forest","1.0","1.0","Different tasks: three classes versus clear/blurry anchors"

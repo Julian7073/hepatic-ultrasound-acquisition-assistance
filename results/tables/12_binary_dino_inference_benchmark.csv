@@ -1,0 +1,4 @@
+﻿view,embedding_model_id,preprocessing,temporal_mode,classifier,iterations,mean_ms_per_evaluated_frame,median_ms_per_evaluated_frame,p95_ms_per_evaluated_frame,fps_if_every_frame,configured_stride,effective_source_fps_capacity_at_stride,meets_30_fps_if_every_frame,device,gpu,python_version,torch_version
+transversal,facebook/dinov2-small,fan_crop,window5,random_forest,30,154.33881666976959,151.09199998551048,179.6482600067975,6.479251438992472,5,32.39625719496236,0,cuda,NVIDIA GeForce RTX 4060 Laptop GPU,3.13.2,2.12.1+cu126
+oblicua,facebook/dinov2-small,fan_crop,window5,logistic_regression,30,77.43561665993184,73.56659998185933,104.79003002110403,12.913954109665383,5,64.56977054832691,0,cuda,NVIDIA GeForce RTX 4060 Laptop GPU,3.13.2,2.12.1+cu126
+hepatorrenal,facebook/dinov2-small,full,window5,knn,30,61.707776658780254,55.337400001008064,88.9596999855712,16.205412901676993,5,81.02706450838497,0,cuda,NVIDIA GeForce RTX 4060 Laptop GPU,3.13.2,2.12.1+cu126

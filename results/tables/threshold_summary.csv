@@ -1,0 +1,4 @@
+﻿parameter,value,method
+min_la_area_px,874.0,"max(20, percentil_5_clear_train_valid)"
+max_la_std_intensity,43.33021924482456,percentil_90_clear_train_valid
+max_glcm_entropy,6.125721796170085,percentil_90_clear_train_valid

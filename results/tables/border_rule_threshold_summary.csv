@@ -1,0 +1,10 @@
+﻿parameter,value,method
+min_border_p90_minus_la_median,3.0,percentil 0.15 de P001 clear aceptados en train/valid
+min_border_gradient_p75,6.324555397033691,percentil 0.15 de P001 clear aceptados en train/valid
+min_border_high_ratio_10,0.0375,percentil 0.15 de P001 clear aceptados en train/valid
+min_border_p90_minus_la_p10,35.0,percentil 0.15 de P001 clear aceptados en train/valid
+reference_count,41,percentil 0.15 de P001 clear aceptados en train/valid
+reference_patient,P001,percentil 0.15 de P001 clear aceptados en train/valid
+reference_quality,clear,percentil 0.15 de P001 clear aceptados en train/valid
+reference_splits,"train,valid",percentil 0.15 de P001 clear aceptados en train/valid
+reference_quantile,0.15,percentil 0.15 de P001 clear aceptados en train/valid
