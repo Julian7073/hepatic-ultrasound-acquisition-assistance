@@ -7,7 +7,7 @@ Research prototype for assisting users with limited ultrasound experience in the
 1. **Longitudinal view.** DeepLabV3+ segments the ultrasound region of interest (ROI) and liver; U-Net segments the anechoic lumen (LA). The deterministic decision uses the implemented area, intensity-dispersion, GLCM-texture, and border-evidence rules.
 2. **Other three views.** DINOv2-Small extracts 384-feature frame embeddings. Five consecutive embeddings are summarized by their mean and population standard deviation (768 features) and classified with Random Forest for the transverse view, logistic regression for the oblique view, and distance-weighted 7-NN for the hepatorenal view.
 
-The auxiliary interface states use 0.35 and 0.65 probability limits, while independent binary metrics use a 0.50 decision threshold. These operational limits and the temporal confirmation logic are documented in the source and frozen result tables.
+The interface uses green, yellow, and red operational states, while the expert label and independent metrics remain binary. In the longitudinal branch, yellow identifies adequate ROI/liver evidence without sufficient LA-dependent evidence. In the DINOv2-Small branches, the red/yellow/green actions use the 0.35 and 0.65 limits, whereas independent binary metrics use a separate 0.50 decision threshold. These limits and the temporal confirmation logic are documented in the source and frozen result tables.
 
 ## Repository map
 
@@ -15,6 +15,7 @@ The auxiliary interface states use 0.35 and 0.65 probability limits, while indep
 - [`Codigos_Segmentacion_Longitudinal/`](Codigos_Segmentacion_Longitudinal/): derivation and audit of longitudinal image features and thresholds.
 - [`Codigos_Entrenamiento_Segmentacion/`](Codigos_Entrenamiento_Segmentacion/): segmentation architecture comparison and training scripts.
 - [`Codigos_DINO_Experimental/`](Codigos_DINO_Experimental/): DINOv2 extraction, classifier selection, temporal aggregation, and independent evaluation.
+- [`03_CODIGO_ENTRENAMIENTO_Y_TEST/`](03_CODIGO_ENTRENAMIENTO_Y_TEST/): thesis-oriented organization that separates development/internal testing from independent Patient 4 validation and then separates every hepatic view.
 - [`models/`](models/): three small view-specific classifier bundles, manifests, hashes, and instructions for the segmentation checkpoints distributed with the tagged release.
 - [`results/`](results/): frozen aggregate CSV tables and non-identifying result figures.
 - [`data/`](data/): expected dataset layout and access restrictions. No ultrasound video, frame, or annotation is published.
@@ -22,7 +23,7 @@ The auxiliary interface states use 0.35 and 0.65 probability limits, while indep
 
 ## Installation
 
-Python 3.11 or 3.12 is recommended. CUDA is optional.
+The audited thesis environment used Python 3.13.2, PyTorch 2.12.1, and CUDA 12.6. CUDA is optional for execution, although processing rates will differ on CPU-only systems.
 
 ```powershell
 git clone https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance.git
@@ -40,7 +41,7 @@ Download the three segmentation checkpoints from the GitHub release and place th
 python -m streamlit run .\Codigos_Pipeline_Experimental_Segmentacion\gui_adquisicion_hepatica.py
 ```
 
-The GUI accepts a previously recorded MP4, AVI, MOV, or MKV file. Select one of the four views, process the sequence, review the binary acquisition guidance, and download confirmed informative images when available. New outputs are written under `outputs/`.
+The GUI accepts a previously recorded MP4, AVI, MOV, or MKV file. Select one of the four views, process the sequence, follow the green/yellow/red acquisition guidance, and download confirmed informative images when available. Yellow requests a fine adjustment and is not a third expert-defined clinical class. New outputs are written under `outputs/`.
 
 If the project is stored in a nonstandard layout, set `THESIS_PROJECT_ROOT` to the repository root before running a script.
 

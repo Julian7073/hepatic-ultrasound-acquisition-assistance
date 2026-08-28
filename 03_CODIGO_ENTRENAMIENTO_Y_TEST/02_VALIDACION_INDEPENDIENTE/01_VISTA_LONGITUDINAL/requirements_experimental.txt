@@ -1,0 +1,13 @@
+torch
+torchvision
+segmentation-models-pytorch
+transformers
+albumentations
+opencv-python
+pycocotools
+numpy
+pandas
+pillow
+matplotlib
+tqdm
+streamlit>=1.30

@@ -5,7 +5,7 @@
 - **Cuenta:** `Julian7073`
 - **Nombre:** `hepatic-ultrasound-acquisition-assistance`
 - **Visibilidad:** pública, para que los anexos de la tesis tengan enlaces verificables sin iniciar sesión.
-- **Descripción:** `Research prototype for standardized hepatic-ultrasound acquisition assistance using segmentation, DINOv2 and view-specific classifiers.`
+- **Descripción:** `Research prototype for identifying informative hepatic-ultrasound images using segmentation, DINOv2 and view-specific classifiers.`
 - **README:** usar el incluido en la raíz.
 - **Licencia:** no seleccionar una licencia abierta mientras no exista autorización institucional. Sin licencia, el código conserva el derecho de autor por defecto.
 - **Rama principal:** `main`.
@@ -18,7 +18,7 @@
 3. Los clasificadores `.joblib`, manifiestos y hashes de `models/`.
 4. Las tablas CSV agregadas y figuras sin imágenes ecográficas individuales de `results/`.
 5. El documento técnico en `docs/thesis.pdf`, si el autor acepta que el documento —incluidos sus datos de portada— sea público.
-6. Los tres `.pth` como activos de la versión `v1.0.0-thesis`, no como archivos ordinarios del repositorio.
+6. Los tres `.pth` como activos de la versión `v1.1.0-thesis`, no como archivos ordinarios del repositorio.
 
 ## 3. Contenido que no debe publicarse
 
@@ -45,7 +45,7 @@ La carga mediante la web de GitHub también es válida para los archivos ordinar
 
 ## 5. Publicación de modelos
 
-Crear la versión `v1.0.0-thesis` con el título `Audited thesis models and implementation` y adjuntar:
+Crear la versión `v1.1.0-thesis` con el título `Audited thesis models and three-state interface` y adjuntar:
 
 - `best_roi_model.pth`
 - `best_higado_model.pth`
@@ -55,16 +55,17 @@ Después de la descarga, verificar cada SHA-256 con `models/model_sha256.csv`. L
 
 ## 6. Enlaces para los anexos
 
-Una vez publicado, usar enlaces permanentes de la etiqueta `v1.0.0-thesis` cuando sea posible:
+Una vez publicado, usar enlaces permanentes de la etiqueta `v1.1.0-thesis` cuando sea posible:
 
-- Implementación longitudinal: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.0.0-thesis/Codigos_Pipeline_Experimental_Segmentacion`
-- Derivación de umbrales: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.0.0-thesis/Codigos_Segmentacion_Longitudinal`
-- Entrenamiento de segmentación: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.0.0-thesis/Codigos_Entrenamiento_Segmentacion`
-- DINOv2 y clasificadores: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.0.0-thesis/Codigos_DINO_Experimental`
-- GUI: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/blob/v1.0.0-thesis/Codigos_Pipeline_Experimental_Segmentacion/gui_adquisicion_hepatica.py`
-- Resultados: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.0.0-thesis/results`
-- Modelos y hashes: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/releases/tag/v1.0.0-thesis`
-- Política de datos: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/blob/v1.0.0-thesis/data/README.md`
+- Código organizado de entrenamiento y prueba: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.1.0-thesis/03_CODIGO_ENTRENAMIENTO_Y_TEST`
+- Implementación longitudinal: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.1.0-thesis/Codigos_Pipeline_Experimental_Segmentacion`
+- Derivación de umbrales: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.1.0-thesis/Codigos_Segmentacion_Longitudinal`
+- Entrenamiento de segmentación: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.1.0-thesis/Codigos_Entrenamiento_Segmentacion`
+- DINOv2 y clasificadores: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.1.0-thesis/Codigos_DINO_Experimental`
+- GUI: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/blob/v1.1.0-thesis/Codigos_Pipeline_Experimental_Segmentacion/gui_adquisicion_hepatica.py`
+- Resultados: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/tree/v1.1.0-thesis/results`
+- Modelos y hashes: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/releases/tag/v1.1.0-thesis`
+- Política de datos: `https://github.com/Julian7073/hepatic-ultrasound-acquisition-assistance/blob/v1.1.0-thesis/data/README.md`
 
 No usar enlaces a `main` en la versión entregada de la tesis, porque pueden cambiar después. La etiqueta conserva una referencia estable a la implementación auditada.
 
@@ -78,4 +79,4 @@ git commit -m "Describe the correction"
 git push
 ```
 
-No sustituir la etiqueta `v1.0.0-thesis`. Si se publica una revisión material, crear `v1.0.1-thesis` y mantener la versión anterior para trazabilidad.
+No sustituir etiquetas ya publicadas. Para esta revisión material se usa `v1.1.0-thesis`; las revisiones posteriores deben recibir una etiqueta nueva y mantener las anteriores para trazabilidad.

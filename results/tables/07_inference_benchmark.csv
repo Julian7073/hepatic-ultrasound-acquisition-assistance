@@ -1,8 +1,8 @@
-component,mean_ms_per_frame,median_ms_per_frame,p95_ms_per_frame,fps,meets_30_fps,resolution,parameter_count,checkpoint_path,device
-ROI,10.63340329782587,9.257700003217906,21.340700011933222,94.04326836775412,True,512x512,22437457,<PROJECT_ROOT>\outputs\experimental_segmentation_pipeline\experiments\deeplabv3_roi_50ep_group_video_earlystop\best_model.pth,cuda
-Higado,9.723660442722286,8.735299983527511,13.020849990425631,102.84192932183828,True,512x512,22437457,<PROJECT_ROOT>\outputs\experimental_segmentation_pipeline\experiments\deeplabv3_higado_pretrained_imagenet_50ep\best_model.pth,cuda
-LA,10.46061428752472,10.109600028954446,12.782300007529557,95.5966803204469,True,512x512,24436369,<PROJECT_ROOT>\outputs\experimental_segmentation_pipeline\experiments\unet_la_pretrained_imagenet_50ep_balanced\best_model.pth,cuda
-preprocessing,8.83521538504123,8.225300000049174,10.46384999062866,113.18343202963504,True,mixed,0,,cuda
-postprocessing,2.712087910417672,0.7715999963693321,1.1997999681625515,368.7196112481458,True,mixed,0,,cuda
-read_io,6.785310987782266,5.626500002108514,12.712900002952665,147.3771801765041,True,original,0,,cuda
-pipeline_3_models_total,49.273520878229576,45.08040001383051,61.840650014346465,20.294876074947346,False,mixed,69311283,,cuda
+﻿component,mean_ms_per_frame,median_ms_per_frame,p95_ms_per_frame,fps,meets_30_fps,resolution,parameter_count,checkpoint_path,device
+ROI,9.796206596957335,9.286100044846535,13.018300000112504,102.0803297789367,True,512x512,22437457,models/segmentation_checkpoints/best_roi_model.pth,cuda
+Higado,9.579005494463043,9.238700033165514,12.093149969587103,104.39497091613846,True,512x512,22437457,models/segmentation_checkpoints/best_higado_model.pth,cuda
+LA,10.8904758254629,10.418399993795902,13.933350011939183,91.82335244360132,True,512x512,24436369,models/segmentation_checkpoints/best_la_model.pth,cuda
+preprocessing,8.95853626355017,8.549900026991963,11.84390002163127,111.62537836328531,True,mixed,0,,cuda
+postprocessing,1.4941230752750985,0.8783999946899712,1.470850023906678,669.2889070171677,True,mixed,0,,cuda
+read_io,10.554169228551192,9.10010002553463,18.127050017938018,94.74928612048355,True,original,0,,cuda
+pipeline_3_models_total,51.3995747257198,48.735200020018965,70.2933499997016,19.455413888854817,False,mixed,69311283,,cuda

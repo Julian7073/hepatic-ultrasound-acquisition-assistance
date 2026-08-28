@@ -6,7 +6,7 @@ The three small DINOv2 classifier bundles are stored in `classifiers/`:
 - `oblicua__binary_dinov2.joblib`
 - `hepatorrenal__binary_dinov2.joblib`
 
-The three segmentation checkpoints are distributed as assets of release `v1.0.0-thesis` because each file exceeds GitHub's ordinary web-upload limit. Download and place them in `segmentation_checkpoints/`:
+The three segmentation checkpoints are distributed as assets of release `v1.1.0-thesis` because each file exceeds GitHub's ordinary web-upload limit. Download and place them in `segmentation_checkpoints/`:
 
 - `best_roi_model.pth`
 - `best_higado_model.pth`
