@@ -1,0 +1,7 @@
+"view","unit","binary_accuracy","binary_balanced_accuracy","binary_precision_macro","binary_recall_macro","binary_f1_macro","binary_samples","binary_blurry_precision","binary_blurry_recall","binary_blurry_f1","binary_blurry_support","binary_clear_precision","binary_clear_recall","binary_clear_f1","binary_clear_support"
+"transverse","window","0.625","0.625","0.7857142857142857","0.625","0.5636363636363637","8","1.0","0.25","0.4","4","0.5714285714285714","1.0","0.7272727272727273","4"
+"transverse","video","0.5","0.5","0.25","0.5","0.3333333333333333","2","0.0","0.0","0.0","1","0.5","1.0","0.6666666666666666","1"
+"oblique","window","1.0","1.0","1.0","1.0","1.0","8","1.0","1.0","1.0","4","1.0","1.0","1.0","4"
+"oblique","video","1.0","1.0","1.0","1.0","1.0","2","1.0","1.0","1.0","1","1.0","1.0","1.0","1"
+"hepatorenal","window","1.0","1.0","1.0","1.0","1.0","8","1.0","1.0","1.0","4","1.0","1.0","1.0","4"
+"hepatorenal","video","1.0","1.0","1.0","1.0","1.0","2","1.0","1.0","1.0","1","1.0","1.0","1.0","1"
