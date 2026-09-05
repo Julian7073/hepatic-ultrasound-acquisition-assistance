@@ -1,0 +1,7 @@
+view,true_anchor,reference_videos,red_adjust,yellow_doubtful,green_capture,wrong_high_confidence_action,interpretation
+transversal,clear,3,0,0,3,0,"All clear reference videos produced green"
+transversal,blurry,3,2,1,0,0,"Two blurry reference videos produced red and one abstained"
+oblicua,clear,4,0,0,4,0,"All clear reference videos produced green"
+oblicua,blurry,3,3,0,0,0,"All blurry reference videos produced red"
+hepatorrenal,clear,3,0,2,1,0,"One clear reference video produced green and two abstained"
+hepatorrenal,blurry,4,2,2,0,0,"Two blurry reference videos produced red and two abstained"

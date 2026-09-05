@@ -9,6 +9,8 @@ Research prototype for assisting users with limited ultrasound experience in the
 
 The interface uses green, yellow, and red operational states, while the expert label and independent metrics remain binary. In the longitudinal branch, yellow identifies adequate ROI/liver evidence without sufficient LA-dependent evidence. In the DINOv2-Small branches, the red/yellow/green actions use the 0.35 and 0.65 limits, whereas independent binary metrics use a separate 0.50 decision threshold. These limits and the temporal confirmation logic are documented in the source and frozen result tables.
 
+The origin, operational purpose, available verification, and limitation of every data-derived or fixed engineering decision are consolidated in [`results/tables/heuristic_design_decisions_audit.csv`](results/tables/heuristic_design_decisions_audit.csv). The development-cohort check of the deployed DINOv2-Small abstention interval is reported separately in [`results/tables/operational_threshold_oof_audit.csv`](results/tables/operational_threshold_oof_audit.csv); it must not be interpreted as independent clinical calibration.
+
 ## Repository map
 
 - [`Codigos_Pipeline_Experimental_Segmentacion/`](Codigos_Pipeline_Experimental_Segmentacion/): integrated longitudinal pipeline, final decision rule, evaluation scripts, and Streamlit GUI.
