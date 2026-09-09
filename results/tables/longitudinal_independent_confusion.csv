@@ -1,0 +1,2 @@
+mask_threshold,tp,fn,fp,tn,sensitivity_pct,specificity_pct,balanced_accuracy_pct
+0.5,0,101,0,101,0.0,100.0,50.0

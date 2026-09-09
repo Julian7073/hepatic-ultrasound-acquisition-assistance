@@ -11,6 +11,8 @@ The interface uses green, yellow, and red operational states, while the expert l
 
 The origin, operational purpose, available verification, and limitation of every data-derived or fixed engineering decision are consolidated in [`results/tables/heuristic_design_decisions_audit.csv`](results/tables/heuristic_design_decisions_audit.csv). The development-cohort check of the deployed DINOv2-Small abstention interval is reported separately in [`results/tables/operational_threshold_oof_audit.csv`](results/tables/operational_threshold_oof_audit.csv); it must not be interpreted as independent clinical calibration.
 
+The frozen longitudinal rule was also subjected to a post-hoc diagnostic audit on the independent participant. The sigmoid mask cutoff was swept from 0.10 to 0.90 without selecting a new value from the independent data. No setting recovered an LA prediction in any of the 101 expert-labeled informative frames, so sensitivity remained 0.0%, specificity 100.0%, and balanced accuracy 50.0%. Removing the LA-area requirement alone admitted seven medium-quality frames but no informative or blurry frame; removing all LA-dependent conditions admitted all 303 frames, producing 100.0% sensitivity and 0.0% specificity. These results identify failed LA transfer plus the mandatory LA gate as the mechanism of collapse and show why changing a downstream threshold cannot be presented as a valid correction. The frame-level records, threshold summary, gate analysis, and frozen-rule confusion matrix are available in [`results/tables/longitudinal_mask_threshold_sensitivity_frames.csv`](results/tables/longitudinal_mask_threshold_sensitivity_frames.csv), [`results/tables/longitudinal_mask_threshold_sensitivity_summary.csv`](results/tables/longitudinal_mask_threshold_sensitivity_summary.csv), [`results/tables/longitudinal_gate_ablation_by_mask_threshold.csv`](results/tables/longitudinal_gate_ablation_by_mask_threshold.csv), and [`results/tables/longitudinal_independent_confusion.csv`](results/tables/longitudinal_independent_confusion.csv).
+
 ## Repository map
 
 - [`Codigos_Pipeline_Experimental_Segmentacion/`](Codigos_Pipeline_Experimental_Segmentacion/): integrated longitudinal pipeline, final decision rule, evaluation scripts, and Streamlit GUI.
@@ -52,6 +54,9 @@ If the project is stored in a nonstandard layout, set `THESIS_PROJECT_ROOT` to t
 ```powershell
 # Independent longitudinal evaluation (requires authorized local data)
 python .\Codigos_Pipeline_Experimental_Segmentacion\evaluate_p005_longitudinal_final.py --frame_stride 3 --save_overlays --save_csv --decision_config .\Codigos_Pipeline_Experimental_Segmentacion\configs\longitudinal_decision_config.json
+
+# Post-hoc diagnostic sweep; does not select a replacement threshold
+python .\results\analysis\audit_longitudinal_independent_sensitivity.py
 
 # DINOv2 inference example (requires a local video)
 python .\Codigos_DINO_Experimental\scripts\10_run_binary_video_inference.py --video .\data\example_video.mp4 --view transversal
